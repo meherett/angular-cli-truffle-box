@@ -1,4 +1,4 @@
-# Angular Cli Truffle Box
+# meherett ANGULAR CLI TRUFFLE BOX
 
 <p align="center">		
   <img src="https://raw.githubusercontent.com/meherett/angular-cli-truffle-box/master/src/assets/meherett-logo.png">		
