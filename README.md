@@ -28,37 +28,41 @@ npm install -g ethereumjs-testrpc [testrpc]
 ```
 
 ## Download BOX
-Using Truffle
+##### Using Truffle
 ```
 truffle unbox meherett/angular-cli-truffle-box
 ```
-Using Git
+##### Using Git
 ```
 git clone https://www.github.com/meherett/angular-cli-truffle-box.git
 ```
-Install Packages
+##### Install Packages
 ```
 npm install or yarn
 ```
 
 ## Running
-###### Run Ethereum client `http://localhost:8545`
+##### Run Ethereum client `http://localhost:8545`
 ```
 testrpc or ganache-cli
 ```
-###### Compile Solidity Contract
+##### Compile Solidity Contract
 ```
 truffle compile
 ```
-###### Deploy Solidity Contract into Ethereum client. Make sure that testrpc or ganache-cli is working on localhost:8545
+##### Deploy Solidity Contract into Ethereum client. Make sure that testrpc or ganache-cli is working on localhost:8545
 ```
 truffle migrate
 ```
-###### Start Angular-CLI. Navigate to `http://localhost:4200`
+##### Start Angular-CLI. Navigate to `http://localhost:4200`
 ```
 ng serve
 ```
 ##### Making sure you have configured MetaMask. ```Send MetaCoins!```
+
+<p align="center">		
+  <img src="https://raw.githubusercontent.com/meherett/angular-cli-truffle-box/master/screenshot.png">		
+</p>	
 
 ## Code scaffolding
 
@@ -85,11 +89,11 @@ Using the Angular CLI you can build a distributable of your app. Will be placed 
  ```
  
 ## Further help
-###### Angular-CLI
+##### Angular-CLI
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI](https://github.com/angular/angular-cli/blob/master/README.md).
-###### Truffle
+##### Truffle
 To get more help on the Truffle use `truffle help` or go check out the [Truffle](https://truffleframework.com/docs).
-###### Truffle-Metamask
+##### Truffle-Metamask
 Go check out the [Truffle-Metamask](http://truffleframework.com/tutorials/truffle-and-metamask).
 
 ## Contact me 
