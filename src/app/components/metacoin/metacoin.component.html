@@ -1,0 +1,52 @@
+<div class="login-dark">
+  <form class="container-fluid" method="post">
+    <div class="row">
+      <div class="col-6">
+        <h1 class="display-6 font-weight-bold py-3 text-left" style="color: gold">MetaCoin</h1>
+      </div>
+      <div class="col-6">
+        <h4 class="py-3 text-right" style="color: gold">{{ balance }} Coin</h4>
+      </div>
+    </div>
+    <ul class="nav nav-tabs bg-transparent justify-content-center" style="border-color: #434a52">
+      <li class="nav-item bg-transparent">
+        <a class="nav-link active bg-transparent font-weight-bold" href="#" style="border-color: #434a52; color: gold; border-bottom-color: transparent">Your's Address</a>
+      </li>
+    </ul>
+    <h5 class="font-weight-bold my-3 text-center" style="color: gold">{{ account }}</h5>
+    <hr class="nav-item bg-dark">
+
+    <div *ngIf="success" class="alert bg-transparent font-weight-bold" role="alert" style="border: solid 1px green; color: green">
+      {{ status }}
+    </div>
+    <div *ngIf="warning" class="alert bg-transparent font-weight-bold" role="alert" style="border: solid 1px gold; color: gold">
+      {{ status }}
+    </div>
+    <div *ngIf="error" class="alert bg-transparent font-weight-bold" role="alert" style="border: solid 1px red; color: red">
+      {{ status }}
+    </div>
+
+    <ul class="nav nav-tabs bg-transparent justify-content-center" style="border-color: #434a52">
+      <li class="nav-item bg-transparent">
+        <a class="nav-link active bg-transparent font-weight-bold" href="#" style="border-color: #434a52; color: gold; border-bottom-color: transparent">Send MetaCoin</a>
+      </li>
+    </ul>
+    <div class="form-group pt-3">
+      <input type="text" class="form-control" placeholder="Amount" required
+             [(ngModel)]="sendMetaCoin.amount" name="_amount" #amount="ngModel">
+      <div *ngIf="!amount.errors && (amount.dirty || amount.touched)">
+        <div class="alert bg-transparent font-weight-bold" role="alert" [hidden]="canBeNumber(sendMetaCoin.amount)" style="border: solid 1px red; color: red">
+          Must be a number
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="text"  class="form-control" placeholder="To Address" required
+             [(ngModel)]="sendMetaCoin.toAddress" name="_toAddress" #toAddress>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary btn-block" (click)="sendCoin(sendMetaCoin)">Send</button>
+    </div>
+    <a href="#" class="forgot">Open console to view any Errors and Warnings</a>
+  </form>
+</div>
