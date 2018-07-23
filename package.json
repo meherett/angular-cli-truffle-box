@@ -30,6 +30,7 @@
     "popper.js": "^1.14.3",
     "rxjs": "^6.0.0",
     "truffle-contract": "^3.0.6",
+    "useragent": "^2.3.0",
     "web3": "^0.20.6",
     "zone.js": "^0.8.26"
   },
