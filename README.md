@@ -6,9 +6,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.
 
-Write, compile & deploy smart contracts for Ethereum.
+Write, compile & deploy smart contracts for Ethereum blockchain.
 
-This Truffle Box provides a base for working with the Truffle Framework and Angular. It provides a basic working example of the MetaCoin contracts with Angular components.
+This Truffle Box provides a base for working with the Truffle Framework and Angular with Bootstrap styling and components. It provides a basic working example of the MetaCoin contracts with Angular components.
 
 ## Requirements
 ###### You will need Node.js (tested with version 8.9.x). This will include npm
