@@ -96,9 +96,5 @@ To get more help on the Truffle use `truffle help` or go check out the [Truffle]
 ##### Truffle-Metamask
 Go check out the [Truffle-Metamask](http://truffleframework.com/tutorials/truffle-and-metamask).
 
-## Contact me 
-```Email: meherett@zoho.com```
-
-```Phone Number: +251 939694717```
-
-```Telegram: https://t.me/meherett```
+## Auther
+[MEHERET TESFAYE](https://github.com/meherett)
